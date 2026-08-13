@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Передача справ · відпустка Олі · 19.08 – 08.09 · RSG</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="https://images.retrostylegames.com/wp-content/uploads/2023/05/new-retrostylegames-favicon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#181818; --bg-alt:#171717; --surface:#1D1D1D; --surface-2:#212121;
+  --border:rgba(255,255,255,.08); --border-2:rgba(255,255,255,.14);
+  --text:#F2F2F2; --text-2:#D9D9D9; --muted:#9D9C9D;
+  --accent:#92152E; --accent-deep:#5C0D1D; --red:#FE2D2D; --pink:#FF869E;
+  --gold:#D4AF37; --success:#04B745;
+  --font:"Montserrat",system-ui,sans-serif; --radius:18px; --gap:24px;
+  --shadow:12px 12px 50px rgba(0,0,0,.4);
+  --hero:radial-gradient(ellipse 140% 104% at 0% 0%,rgba(92,13,29,.55) 0%,rgba(24,24,24,.5) 82%);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--pink);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;background:var(--hero);border-bottom:1px solid var(--border);overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 100% 0%,rgba(255,134,158,.06),transparent 45%);pointer-events:none}
+.hero-inner{position:relative;padding:44px 0 38px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.14em;font-size:12px;color:var(--gold);text-transform:uppercase;margin-bottom:26px}
+.brand .dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+h1{font-size:clamp(30px,5vw,54px);line-height:1.05;font-weight:800;margin:0 0 14px;letter-spacing:-.01em}
+h1 .hl{color:var(--pink)}
+.lede{font-size:clamp(15px,2vw,18px);color:var(--text-2);max-width:720px;margin:0 0 26px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.chip{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);padding:9px 15px;border-radius:999px;font-size:13.5px;color:var(--text-2);font-weight:500}
+.chip b{color:var(--text);font-weight:700}
+.chip.tg{border-color:rgba(255,134,158,.35)}
+
+/* progress */
+.progress-card{display:flex;align-items:center;gap:20px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px 20px}
+.progress-num{font-size:26px;font-weight:800}
+.progress-num b{color:var(--pink)}
+.progress-bar{flex:1;min-width:180px;height:9px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden}
+.progress-fill{height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--red));border-radius:999px;transition:width .4s ease}
+.btn-reset{background:transparent;border:1px solid var(--border-2);color:var(--muted);border-radius:999px;padding:8px 16px;font-family:var(--font);font-size:12.5px;font-weight:600;cursor:pointer}
+.btn-reset:hover{color:var(--text);border-color:var(--red)}
+.sync-note{font-size:12px;color:var(--muted);margin-top:10px;display:flex;align-items:center;gap:7px}
+.sync-dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.sync-dot.ok{background:var(--success)}
+.sync-dot.local{background:var(--gold)}
+
+/* how to use */
+.howto{background:rgba(146,21,46,.10);border:1px solid rgba(146,21,46,.35);border-radius:14px;padding:16px 20px;margin:24px 0 8px;font-size:14px;color:var(--text-2)}
+.howto b{color:var(--text)}
+.howto ul{margin:8px 0 0;padding-left:20px}
+.howto li{margin:3px 0}
+
+/* ---------- NAV ---------- */
+.catnav{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}
+.catnav a{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:8px 15px;font-size:13px;font-weight:600;color:var(--text-2)}
+.catnav a:hover{border-color:var(--accent);color:var(--text);text-decoration:none}
+.catnav .mini-done{color:var(--muted);font-weight:500}
+
+/* ---------- CATEGORY ---------- */
+.cat{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin:18px 0;overflow:hidden;box-shadow:var(--shadow)}
+.cat-head{display:flex;align-items:center;gap:16px;padding:22px 24px;cursor:pointer;user-select:none}
+.cat-head:hover{background:var(--surface-2)}
+.cat-ico{font-size:26px;line-height:1;filter:grayscale(.1)}
+.cat-titles{flex:1;min-width:0}
+.cat-name{font-size:19px;font-weight:700;letter-spacing:-.01em}
+.cat-sub{font-size:13px;color:var(--muted);margin-top:2px}
+.owner-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,134,158,.12);border:1px solid rgba(255,134,158,.3);color:var(--pink);font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px;white-space:nowrap}
+.cat-prog{font-size:12.5px;color:var(--muted);font-weight:600;white-space:nowrap}
+.chev{transition:transform .3s;color:var(--muted);font-size:14px}
+.cat.open .chev{transform:rotate(90deg)}
+.cat-body{display:none;padding:4px 24px 26px}
+.cat.open .cat-body{display:block}
+
+.ctx{font-size:14.5px;color:var(--text-2);background:var(--bg-alt);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:10px;padding:14px 16px;margin:6px 0 18px}
+.ctx b{color:var(--text)}
+
+.block-label{font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:22px 0 10px}
+
+/* links row */
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.link-btn{display:inline-flex;align-items:center;gap:8px;background:var(--bg-alt);border:1px solid var(--border-2);border-radius:10px;padding:10px 14px;font-size:13px;font-weight:600;color:var(--text-2);max-width:100%}
+.link-btn:hover{border-color:var(--accent);color:var(--text);text-decoration:none}
+.link-btn .ic{color:var(--pink)}
+.link-btn span.t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* pipeline */
+.pipe{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:4px}
+.pipe .step{background:var(--bg-alt);border:1px solid var(--border);border-radius:8px;padding:7px 12px;font-size:12.5px;color:var(--text-2);font-weight:500}
+.pipe .arr{color:var(--muted);font-size:12px}
+
+/* tasks */
+.tasks{margin-top:6px;display:flex;flex-direction:column;gap:8px}
+.task{display:flex;align-items:flex-start;gap:13px;background:var(--bg-alt);border:1px solid var(--border);border-radius:12px;padding:13px 15px;transition:border-color .2s}
+.task:hover{border-color:var(--border-2)}
+.task.done{opacity:.62}
+.task .chk{appearance:none;-webkit-appearance:none;flex:0 0 auto;width:22px;height:22px;margin-top:1px;border:2px solid var(--border-2);border-radius:7px;cursor:pointer;position:relative;background:transparent;transition:.15s}
+.task .chk:hover{border-color:var(--accent)}
+.task .chk:checked{background:var(--accent);border-color:var(--accent)}
+.task .chk:checked::after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.task-main{flex:1;min-width:0}
+.task-title{font-size:14.5px;font-weight:600;color:var(--text)}
+.task.done .task-title{text-decoration:line-through;color:var(--muted)}
+.task-sub{font-size:12.5px;color:var(--muted);margin-top:3px}
+.task-sub a{color:var(--pink)}
+.task.flag{border-color:rgba(254,45,45,.4);background:rgba(254,45,45,.06)}
+.task .deadline{display:inline-block;font-size:11px;font-weight:700;color:var(--red);background:rgba(254,45,45,.12);padding:2px 8px;border-radius:6px;margin-top:6px}
+.task-controls{display:flex;flex-direction:column;gap:6px;flex:0 0 auto;align-items:flex-end}
+.owner,.date{font-family:var(--font);font-size:12px;font-weight:600;background:var(--surface);border:1px solid var(--border-2);color:var(--text-2);border-radius:8px;padding:6px 9px;cursor:pointer}
+.owner{min-width:120px}
+.owner:focus,.date:focus{outline:none;border-color:var(--accent)}
+.date{color-scheme:dark;min-width:120px}
+
+/* callout */
+.callout{border-radius:12px;padding:13px 16px;font-size:13.5px;margin-top:12px}
+.callout.warn{background:rgba(212,175,55,.10);border:1px solid rgba(212,175,55,.35);color:#e9d79a}
+.callout.info{background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--text-2)}
+.callout.hot{background:rgba(254,45,45,.09);border:1px solid rgba(254,45,45,.35);color:#ffb4b4}
+.callout b{color:var(--text)}
+
+/* drafts */
+.draft{background:var(--bg-alt);border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin-top:10px}
+.draft-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:9px}
+.draft-label{font-size:13.5px;font-weight:700;color:var(--text)}
+.draft-hint{font-size:12px;color:var(--muted);font-weight:500}
+.copy-btn{background:var(--accent);border:none;color:#fff;font-family:var(--font);font-size:12px;font-weight:700;padding:7px 14px;border-radius:8px;cursor:pointer;white-space:nowrap;transition:.15s}
+.copy-btn:hover{background:var(--red)}
+.copy-btn.copied{background:var(--success)}
+.draft-text{width:100%;min-height:88px;resize:vertical;background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--font);font-size:13.5px;line-height:1.5;border-radius:9px;padding:11px 13px}
+.draft-text:focus{outline:none;border-color:var(--accent)}
+.draft-text::placeholder{color:#6b6b6b;font-style:italic}
+.fieldbox{background:var(--surface);border:1px dashed var(--border-2);border-radius:9px;padding:11px 13px;font-size:13px;color:var(--muted)}
+
+/* footer */
+footer{border-top:1px solid var(--border);margin-top:40px;padding:30px 0 60px;color:var(--muted);font-size:13px}
+footer .big{color:var(--text-2);font-size:14px;margin-bottom:6px}
+.tag{display:inline-block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:2px 8px;font-size:11.5px;font-weight:700;color:var(--text-2)}
+.mono{font-family:ui-monospace,Menlo,Consolas,monospace;background:var(--surface);border:1px solid var(--border-2);border-radius:6px;padding:2px 7px;font-size:12.5px;color:var(--gold)}
+.copy-inline{background:transparent;border:1px solid var(--border-2);color:var(--muted);border-radius:6px;padding:2px 8px;font-size:11px;font-weight:600;cursor:pointer;font-family:var(--font)}
+.copy-inline:hover{color:var(--text);border-color:var(--accent)}
+/* gate */
+#gate{position:fixed;inset:0;z-index:9999;background:var(--bg);background-image:var(--hero);display:flex;align-items:center;justify-content:center;padding:20px}
+#gate .box{width:100%;max-width:380px;text-align:center}
+#gate .glogo{font-weight:700;letter-spacing:.14em;font-size:12px;color:var(--gold);text-transform:uppercase;margin-bottom:22px}
+#gate h2{font-size:24px;font-weight:800;margin:0 0 6px}
+#gate p{color:var(--muted);font-size:14px;margin:0 0 22px}
+#gate input{width:100%;background:var(--surface);border:1px solid var(--border-2);color:var(--text);font-family:var(--font);font-size:16px;border-radius:12px;padding:14px 16px;text-align:center;margin-bottom:12px}
+#gate input:focus{outline:none;border-color:var(--accent)}
+#gate button{width:100%;background:var(--accent);border:none;color:#fff;font-family:var(--font);font-size:15px;font-weight:700;border-radius:12px;padding:14px;cursor:pointer}
+#gate button:hover{background:var(--red)}
+#gate .err{color:var(--red);font-size:13px;height:18px;margin-top:10px;font-weight:600}
+body.locked{overflow:hidden}
+@media(max-width:640px){
+  .task{flex-wrap:wrap}
+  .task-controls{flex-direction:row;width:100%;justify-content:flex-start;padding-left:35px}
+  .cat-head{flex-wrap:wrap}
+  .owner-badge{order:3}
+}
+</style>
+</head>
+<body class="locked">
+
+<div id="gate">
+  <div class="box">
+    <div class="glogo">RetroStyle Games · HR</div>
+    <h2>Передача справ Олі</h2>
+    <p>Внутрішня сторінка. Введіть пароль доступу.</p>
+    <input id="gatePass" type="password" placeholder="Пароль" autocomplete="off">
+    <button id="gateBtn">Увійти</button>
+    <div class="err" id="gateErr"></div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="brand"><span class="dot"></span> RetroStyle Games · HR · передача справ</div>
+    <h1>Поки Оля у відпустці —<br>усе <span class="hl">тут</span>.</h1>
+    <p class="lede">Це дашборд передачі справ на час відпустки Олі (<b>19.08 – 08.09</b>). Кожен блок — окрема зона: що робити, де шукати, кого чіпати, готові драфти листів. Відмічайте зроблене галочкою, ставте дату й того, хто взяв задачу — усе зберігається для всіх.</p>
+    <div class="chips">
+      <span class="chip">🏖️ Відпустка: <b>19.08 – 08.09</b></span>
+      <span class="chip">🔁 Перший робочий день Олі: <b>09.09</b></span>
+      <span class="chip tg">💬 Оля на зв'язку в <b>Telegram</b> — у разі чого пишіть</span>
+    </div>
+    <div class="progress-card">
+      <div class="progress-num"><b id="pdone">0</b> / <span id="ptotal">0</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="pfill"></div></div>
+      <div style="font-size:13px;color:var(--muted);font-weight:600">задач закрито</div>
+      <button class="btn-reset" id="resetBtn">Скинути все</button>
+    </div>
+    <div class="sync-note"><span class="sync-dot" id="syncDot"></span><span id="syncMsg">Підключення до спільного сховища…</span></div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="howto">
+    <b>Як користуватись:</b>
+    <ul>
+      <li>Натисни на заголовок блоку — розкриється зона з деталями, лінками й драфтами.</li>
+      <li>Біля кожної задачі: <b>галочка</b> (закреслює зроблене), <b>хто взяв</b> (список імен) і <b>дата</b> (з календаря).</li>
+      <li>Драфти листів можна редагувати прямо тут і копіювати кнопкою — правки бачать усі.</li>
+      <li>Усе синхронізується між усіма, хто відкрив сторінку. Питання — Оля в Telegram.</li>
+    </ul>
+  </div>
+
+  <nav class="catnav" id="catnav"></nav>
+
+  <!-- ============ 1. 3D LEAD ARTIST ============ -->
+  <section class="cat" id="cat-lead" data-name="3D Lead Artist" data-ico="🎨" data-owner="mini-Olya">
+    <div class="cat-head">
+      <span class="cat-ico">🎨</span>
+      <div class="cat-titles">
+        <div class="cat-name">Вакансія 3D Lead Artist</div>
+        <div class="cat-sub">Повне ведення + сорсинг · показ Саші ПМ</div>
+      </div>
+      <span class="owner-badge">👤 mini-Olya</span>
+      <span class="cat-prog" data-prog></span>
+      <span class="chev">▶</span>
+    </div>
+    <div class="cat-body">
+      <div class="ctx">
+        <b>mini-Olya веде вакансію повністю</b> — сорсинг і весь пайплайн. Кандидати з джоб-сайтів слабкі, тому <b>сорсинг обов'язковий</b> — на ньому вся надія. Оля спілкується переважно в <b>Telegram</b> (папка «3D Lead») — так швидше. Зараз <b>11 кандидатів на показі</b>, Оля чекає фідбек від Саші ПМ і, скоріш за все, встигне повернути фіди сама; якщо ні — оновить статус нижче, що треба підхопити.
+      </div>
+
+      <div class="block-label">Пайплайн</div>
+      <div class="pipe">
+        <span class="step">Відгук</span><span class="arr">→</span>
+        <span class="step">Первинний лист</span><span class="arr">→</span>
+        <span class="step">Якщо ОК — «чекайте»</span><span class="arr">→</span>
+        <span class="step">Показ Саші ПМ</span><span class="arr">→</span>
+        <span class="step">Дзвінок / відмова</span>
+      </div>
+
+      <div class="block-label">Лінки</div>
+      <div class="links">
+        <a class="link-btn" target="_blank" href="https://retrostylegames.peopleforce.io/recruitment/vacancies/221118-3d-lead-artist-summer-2026"><span class="ic">🔗</span><span class="t">Борда в PeopleForce</span></a>
+        <a class="link-btn" target="_blank" href="https://candidates-board.vercel.app"><span class="ic">🖼️</span><span class="t">Спільна витрина кандидатів (Саша має доступ)</span></a>
+      </div>
+
+      <div class="block-label">Задачі</div>
+      <div class="tasks">
+        <div class="task" data-id="lead-daily"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Щодня дивитись відгуки й рухати кандидатів</div><div class="task-sub">Не мовчати довго — усім відповідати на первинні листи</div></div><div class="task-controls"><select class="owner" data-default="mini-Olya"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="lead-first"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Первинний лист новим кандидатам</div><div class="task-sub">Драфт нижче · зазвичай у Telegram швидше</div></div><div class="task-controls"><select class="owner" data-default="mini-Olya"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="lead-show"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">ОК-кандидатів виносити на витрину й показувати Саші ПМ</div></div><div class="task-controls"><select class="owner" data-default="mini-Olya"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="lead-fb"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Зібрати фідбек Саші по 11 кандидатах на показі</div><div class="task-sub">Оля постарається сама; якщо не встигне — підхопити (оновить статус тут)</div></div><div class="task-controls"><select class="owner" data-default="mini-Olya"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="lead-next"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Після фідбеку: дзвінок або відмова</div></div><div class="task-controls"><select class="owner" data-default="mini-Olya"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="lead-sourcing"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Сорсинг — постійно</div><div class="task-sub">Вхідні кандидати слабкі, тому сорсинг обов'язковий</div></div><div class="task-controls"><select class="owner" data-default="mini-Olya"></select><input type="date" class="date"></div></div>
+        <div class="task flag" data-id="lead-repost"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Переопублікувати вакансію на джоб-сайтах</div><div class="task-sub">Публікація закінчується — треба оновити</div><span class="deadline">⏰ до 29.08</span></div><div class="task-controls"><select class="owner" data-default="mini-Olya"></select><input type="date" class="date"></div></div>
+      </div>
+
+      <div class="block-label">Драфти листів (можна редагувати й копіювати)</div>
+      <div class="draft" data-id="d-lead-first"><div class="draft-head"><span class="draft-label">Первинний лист кандидату</span><button class="copy-btn">Копіювати</button></div><textarea class="draft-text" placeholder="[Оля залишить драфт первинного листа тут]"></textarea></div>
+      <div class="draft" data-id="d-lead-wait"><div class="draft-head"><span class="draft-label">«Ви нам підходите, чекайте»</span><button class="copy-btn">Копіювати</button></div><textarea class="draft-text" placeholder="[Оля залишить драфт тут]"></textarea></div>
+      <div class="draft" data-id="d-lead-call"><div class="draft-head"><span class="draft-label">Запрошення на дзвінок</span><button class="copy-btn">Копіювати</button></div><textarea class="draft-text" placeholder="[Оля залишить драфт тут]"></textarea></div>
+      <div class="draft" data-id="d-lead-reject"><div class="draft-head"><span class="draft-label">Відмова</span><button class="copy-btn">Копіювати</button></div><textarea class="draft-text" placeholder="[Оля залишить драфт тут]"></textarea></div>
+    </div>
+  </section>
+
+  <!-- ============ 2. 3D ПІД ЗАПИТ (FIX) ============ -->
+  <section class="cat" id="cat-fix" data-name="3D під запит (FIX)" data-ico="⚡" data-owner="ПМ / контроль">
+    <div class="cat-head">
+      <span class="cat-ico">⚡</span>
+      <div class="cat-titles">
+        <div class="cat-name">3D під запит (FIX) — Vitaliy Dets</div>
+        <div class="cat-sub">Підключення під BG Production · на контролі ПМ</div>
+      </div>
+      <span class="owner-badge">👤 ПМ / контроль</span>
+      <span class="cat-prog" data-prog></span>
+      <span class="chev">▶</span>
+    </div>
+    <div class="cat-body">
+      <div class="ctx">
+        <b>Vitaliy Dets</b> — підключення під потенційну навантаженість по <b>BG Production</b> (обговорювалось у чаті 3D-ліда з Поліною ПМ). Оля намагається до <b>18.08</b> все підготувати й передати в руки ПМ. <b>Дати старту немає</b> — це вже на контролі ПМ (щоб написали йому в чат), Оля його попередить. Від вас — увага лише <b>якщо виникнуть питання</b>.
+      </div>
+      <div class="block-label">Лінки</div>
+      <div class="links">
+        <a class="link-btn" target="_blank" href="https://retrostylegames.peopleforce.io/recruitment/applicants/7432436"><span class="ic">🔗</span><span class="t">Vitaliy Dets у PeopleForce</span></a>
+      </div>
+      <div class="block-label">Задачі</div>
+      <div class="tasks">
+        <div class="task" data-id="fix-prep"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Оля готує й передає ПМ</div><div class="task-sub">Планується закрити до 18.08 (до відпустки)</div><span class="deadline">до 18.08</span></div><div class="task-controls"><select class="owner" data-default="mini-Olya"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="fix-questions"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Якщо виникнуть питання по підключенню — включитись</div><div class="task-sub">Далі старт і контроль — на боці ПМ</div></div><div class="task-controls"><select class="owner" data-default="—"></select><input type="date" class="date"></div></div>
+      </div>
+      <div class="callout info">📌 Старту за датою немає. ПМ мають самі написати Віталію в чат, коли з'явиться навантаження. Ваша роль — тільки підстрахувати за питаннями.</div>
+    </div>
+  </section>
+
+  <!-- ============ 3. 3D ANIMATOR ============ -->
+  <section class="cat" id="cat-anim" data-name="3D Animator" data-ico="🎬" data-owner="—">
+    <div class="cat-head">
+      <span class="cat-ico">🎬</span>
+      <div class="cat-titles">
+        <div class="cat-name">3D Animator</div>
+        <div class="cat-sub">Поки не чіпати · Оля закриє підключення до відпустки</div>
+      </div>
+      <span class="owner-badge">👤 поки нікого</span>
+      <span class="cat-prog" data-prog></span>
+      <span class="chev">▶</span>
+    </div>
+    <div class="cat-body">
+      <div class="ctx">
+        Вакансією <b>поки займатись не треба</b>. Публікація на джоб-сайтах закінчується <b>17.08</b> — переопубліковувати <b>НЕ потрібно</b>. У ПМ є «корзинка» кандидатів. Андрій ПМ казав, що потрібен +1 і він дістане когось з корзинки — Оля попросила зробити це <b>до її відпустки</b>, щоб вона сама підключила й ви це не підхоплювали.
+      </div>
+      <div class="callout warn">⚠️ <b>Тільки якщо в процесі виникне потреба підключити:</b> усі кандидати з корзинки — на борді PF на вкладці <b>FROZEN</b> (12–13 свіжих). Виносились на показ у стару Miro-борду.</div>
+      <div class="block-label">Лінки (на випадок потреби)</div>
+      <div class="links">
+        <a class="link-btn" target="_blank" href="https://retrostylegames.peopleforce.io/recruitment/vacancies/225396-3d-animator-generalist-gamedev"><span class="ic">🔗</span><span class="t">Борда PF · вкладка FROZEN</span></a>
+        <a class="link-btn" target="_blank" href="https://miro.com/app/board/uXjVJZDBf7U=/?moveToWidget=3458764680233315463&cot=14"><span class="ic">🖼️</span><span class="t">Стара Miro-борда (показ)</span></a>
+      </div>
+      <div class="block-label">Задачі</div>
+      <div class="tasks">
+        <div class="task" data-id="anim-noop"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Поки нічого не робити</div><div class="task-sub">Оля закриє підключення +1 до відпустки</div></div><div class="task-controls"><select class="owner" data-default="—"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="anim-ifneed"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Якщо ПМ попросить підключити — брати кандидата з FROZEN</div></div><div class="task-controls"><select class="owner" data-default="—"></select><input type="date" class="date"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. JUNIOR PM ============ -->
+  <section class="cat" id="cat-jpm" data-name="Junior Project Manager" data-ico="📋" data-owner="Nika+Lesha">
+    <div class="cat-head">
+      <span class="cat-ico">📋</span>
+      <div class="cat-titles">
+        <div class="cat-name">Вакансія Junior Project Manager</div>
+        <div class="cat-sub">Ведення · відгуки щодня · показ Ані та Саші</div>
+      </div>
+      <span class="owner-badge">👤 Nika + Lesha</span>
+      <span class="cat-prog" data-prog></span>
+      <span class="chev">▶</span>
+    </div>
+    <div class="cat-body">
+      <div class="ctx">
+        Вакансію Оля <b>переопублікувала на сайтах 12.08.2026</b> — оновлювати НЕ треба. Дивимось відгуки на <b>DOU, Work.ua та в Google-формі</b> й обробляємо їх <b>щодня</b>, щоб швидко рухати кандидатів. Усім відповідати на первинні листи, не мовчати довго. Оля зазвичай пише в <b>Telegram</b> — так швидше, ніж на пошті.
+      </div>
+      <div class="callout hot">⚠️ <b>Google-форма НЕ тягне кандидатів у PeopleForce автоматично</b> — перевіряти її руками щодня.</div>
+
+      <div class="block-label">Пайплайн</div>
+      <div class="pipe">
+        <span class="step">Відгук</span><span class="arr">→</span>
+        <span class="step">Первинний лист</span><span class="arr">→</span>
+        <span class="step">Дзвінок з HR</span><span class="arr">→</span>
+        <span class="step">Показ ПМ (Аня, Саша)</span><span class="arr">→</span>
+        <span class="step">Співбесіда</span><span class="arr">→</span>
+        <span class="step">Тест-дні</span><span class="arr">→</span>
+        <span class="step">1-й робочий день</span>
+      </div>
+
+      <div class="block-label">Лінки</div>
+      <div class="links">
+        <a class="link-btn" target="_blank" href="https://docs.google.com/spreadsheets/d/1aN91YtzQOhO6mA3mF2T8ibJEOHiwUvML8UIdCalvOTE/edit?resourcekey=&gid=1761890299#gid=1761890299"><span class="ic">📄</span><span class="t">Google-форма з відгуками</span></a>
+        <a class="link-btn" target="_blank" href="https://candidates-board.vercel.app"><span class="ic">🖼️</span><span class="t">Спільна витрина (показ ПМ)</span></a>
+      </div>
+
+      <div class="block-label">Задачі</div>
+      <div class="tasks">
+        <div class="task" data-id="jpm-daily"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Щодня: DOU + Work.ua + Google-форма, рухати кандидатів</div><div class="task-sub">Форму перевіряти руками — в PF не тягне</div></div><div class="task-controls"><select class="owner" data-default="Nika+Lesha"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="jpm-first"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Первинний лист усім відгукам (не мовчати)</div><div class="task-sub">2 драфти: з резюме без форми / з формою без резюме</div></div><div class="task-controls"><select class="owner" data-default="Nika+Lesha"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="jpm-call"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Якщо відповіді ОК — дзвінок з HR</div></div><div class="task-controls"><select class="owner" data-default="Nika+Lesha"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="jpm-show"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Успішний дзвінок → показ ПМ (Аня + Саша, чат по ПМ вакансії) через витрину</div></div><div class="task-controls"><select class="owner" data-default="Nika+Lesha"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="jpm-interview"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Сподобався → запросити на співбесіду</div></div><div class="task-controls"><select class="owner" data-default="Nika+Lesha"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="jpm-testdays"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Сподобався після співбесіди → тест-дні</div></div><div class="task-controls"><select class="owner" data-default="Nika+Lesha"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="jpm-offer"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Сподобався після тест-днів → 1-й робочий день (оффер)</div></div><div class="task-controls"><select class="owner" data-default="Nika+Lesha"></select><input type="date" class="date"></div></div>
+      </div>
+
+      <div class="callout warn" data-id="note-karina" id="karina-note">👀 <b>Окремо у фокусі: Клименко Карина</b> — на тест-днях <b>11–13 серпня</b> під 2D Casual. <span style="color:var(--muted)">[Оля допише апдейт: беремо / не беремо, оффер / ні, коли]</span></div>
+
+      <div class="block-label">Драфти листів (редагувати й копіювати)</div>
+      <div class="draft" data-id="d-jpm-first-cv"><div class="draft-head"><span class="draft-label">Первинний лист — є резюме, немає Google-форми</span><button class="copy-btn">Копіювати</button></div><textarea class="draft-text" placeholder="[Оля залишить драфт тут]"></textarea></div>
+      <div class="draft" data-id="d-jpm-first-form"><div class="draft-head"><span class="draft-label">Первинний лист — є Google-форма, немає резюме</span><button class="copy-btn">Копіювати</button></div><textarea class="draft-text" placeholder="[Оля залишить драфт тут]"></textarea></div>
+      <div class="draft" data-id="d-jpm-call"><div class="draft-head"><span class="draft-label">Запрошення на дзвінок з HR</span><button class="copy-btn">Копіювати</button></div><textarea class="draft-text" placeholder="[Оля залишить драфт тут]"></textarea></div>
+      <div class="draft" data-id="d-jpm-interview"><div class="draft-head"><span class="draft-label">Запрошення на співбесіду</span><button class="copy-btn">Копіювати</button></div><textarea class="draft-text" placeholder="[Оля залишить драфт тут]"></textarea></div>
+      <div class="draft" data-id="d-jpm-testdays"><div class="draft-head"><span class="draft-label">Запрошення на тест-дні</span><button class="copy-btn">Копіювати</button></div><textarea class="draft-text" placeholder="[Оля залишить драфт тут]"></textarea></div>
+      <div class="draft" data-id="d-jpm-offer"><div class="draft-head"><span class="draft-label">Оффер / 1-й робочий день</span><button class="copy-btn">Копіювати</button></div><textarea class="draft-text" placeholder="[Оля залишить драфт тут]"></textarea></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. SALARY / ACC ============ -->
+  <section class="cat" id="cat-acc" data-name="Salary / ACC (табель)" data-ico="💰" data-owner="Nika">
+    <div class="cat-head">
+      <span class="cat-ico">💰</span>
+      <div class="cat-titles">
+        <div class="cat-name">Salary / ACC — табель серпня</div>
+        <div class="cat-sub">Предфінал 24.08 · Фінал 31.08 до 11:00</div>
+      </div>
+      <span class="owner-badge">👤 Nika (Вероніка)</span>
+      <span class="cat-prog" data-prog></span>
+      <span class="chev">▶</span>
+    </div>
+    <div class="cat-body">
+      <div class="ctx">
+        Табель серпня. <b>Предфінал</b> віддати в ACC — <b>24.08 до кінця дня</b>. <b>Фінал</b> (день виплати ЗП) — <b>31.08.2026 до 11:00</b>. Предфінал збирає <b>Клод автоматично</b> — файл та інструкцію для Клода Оля передасть Вероніці <b>в особисті</b>. Клод сам збере табель; Вероніці треба приділити час на його уточнення й на комунікацію/звірку з ПМ.
+      </div>
+
+      <div class="block-label">Ключові дати</div>
+      <div class="pipe">
+        <span class="step">21.08 / 24.08 до обіду — ПМ заповнюють свою табличку</span><span class="arr">→</span>
+        <span class="step">24.08 кінець дня — предфінал в ACC</span><span class="arr">→</span>
+        <span class="step">28.08 до 18:00 — Коля дає МКТ-фрілансерів</span><span class="arr">→</span>
+        <span class="step">31.08 до 11:00 — фінал</span>
+      </div>
+
+      <div class="block-label">Задачі</div>
+      <div class="tasks">
+        <div class="task flag" data-id="acc-prefinal"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Предфінал табеля → віддати в ACC</div><div class="task-sub">Клод збирає автоматично; Вероніка перевіряє</div><span class="deadline">⏰ 24.08 до кінця дня</span></div><div class="task-controls"><select class="owner" data-default="Nika"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="acc-claude"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Відповідати на уточнення Клода, звіряти з ПМ</div><div class="task-sub">Овертайми зібрати й завантажити в Клод окремо; якщо розходження з даними ПМ — розібратись чому</div></div><div class="task-controls"><select class="owner" data-default="Nika"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="acc-check"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Перевірити адекватність заповнення Клодом</div><div class="task-sub">Іноді допускає помилки — обов'язково передивитись</div></div><div class="task-controls"><select class="owner" data-default="Nika"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="acc-sms"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">SMS для ACC: Клод збирає → Вероніка долбчекає → в чат ACC</div></div><div class="task-controls"><select class="owner" data-default="Nika"></select><input type="date" class="date"></div></div>
+        <div class="task flag" data-id="acc-etro"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Написати й відправити лист співробітникам в «Етро»</div><div class="task-sub">Драфт — нижче (Оля залишить), просто копірнути</div><span class="deadline">⏰ 25.08.2026</span></div><div class="task-controls"><select class="owner" data-default="Nika"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="acc-pm-table"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Прийняти від ПМ заповнену табличку (21.08 або 24.08 до обіду)</div><div class="task-sub">Оля попросить ПМ — щоб Клод сам порівняв дані</div></div><div class="task-controls"><select class="owner" data-default="Nika"></select><input type="date" class="date"></div></div>
+        <div class="task flag" data-id="acc-mkt"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Коля дає МКТ-фрілансерів → вислати в чат ACC + додати години в табель руками</div><div class="task-sub">Драфт SMS нижче — вписати години й суми</div><span class="deadline">⏰ 28.08 до 18:00</span></div><div class="task-controls"><select class="owner" data-default="Nika"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="acc-grow-back"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Повернути відповіді по запитах на ріст: Адамов Руслан (відеомонтажер) + Шевченко Марія (2D)</div><div class="task-sub">Обидва кидались у HR HUB — інфа у Вероніки вже має бути</div></div><div class="task-controls"><select class="owner" data-default="Nika"></select><input type="date" class="date"></div></div>
+        <div class="task" data-id="acc-pf-approve"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Табелі від ребят у PF на затвердження — звіряти з загальним, апрувити/відмовляти</div><div class="task-sub">Якщо не сходиться — з'ясувати чому (це правки у фінал)</div></div><div class="task-controls"><select class="owner" data-default="Nika"></select><input type="date" class="date"></div></div>
+        <div class="task flag" data-id="acc-final"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Фінал: усі правки руками (зазвичай небагато)</div><span class="deadline">⏰ 31.08 до 11:00</span></div><div class="task-controls"><select class="owner" data-default="Nika"></select><input type="date" class="date"></div></div>
+      </div>
+
+      <div class="callout info">💡 <b>Нові ставки й бонуси</b> можна вносити <b>Клодом у PeopleForce</b> без проблем — думаю, це вже покрито. Головне — формула округлення ставок (для штатних і для GIG-контракту) нижче.</div>
+      <div class="callout info">💡 <b>Ріст ставок</b> (крім тих, що апрувили раніше) у штатних/GIG — вносити в табличку <b>«Зміна ставок ГІГ/ШТАТ»</b> для бухгалтерії. Клод це теж уміє. Посилання на табличку Оля дасть в особисті (там багато конф. інфи).</div>
+
+      <div class="block-label">Формула округлення ставок</div>
+      <div class="fieldbox" data-editable-id="acc-formula" contenteditable="false">[Оля вставить сюди формулу округлення ставок — для штатних і для GIG-контракту]</div>
+
+      <div class="block-label">Драфти (редагувати й копіювати)</div>
+      <div class="draft" data-id="d-acc-etro"><div class="draft-head"><span class="draft-label">Лист співробітникам в «Етро» (25.08)</span><button class="copy-btn">Копіювати</button></div><textarea class="draft-text" placeholder="[Оля залишить готовий текст — Вероніці лишиться тільки скопіювати]"></textarea></div>
+      <div class="draft" data-id="d-acc-mkt"><div class="draft-head"><span class="draft-label">SMS в ACC по МКТ-фрілансерах</span><span class="draft-hint">вписати години й суми</span><button class="copy-btn">Копіювати</button></div><textarea class="draft-text" placeholder="[Оля залишить драфт SMS — Вероніці вписати години й суми від Колі]"></textarea></div>
+    </div>
+  </section>
+
+  <!-- ============ 6. CONTENT ============ -->
+  <section class="cat" id="cat-content" data-name="Content (LinkedIn + DOU)" data-ico="✍️" data-owner="mini-Olya, Sveta">
+    <div class="cat-head">
+      <span class="cat-ico">✍️</span>
+      <div class="cat-titles">
+        <div class="cat-name">Content — LinkedIn + DOU відгуки</div>
+        <div class="cat-sub">LinkedIn-аналітика · перевірка відгуку на DOU</div>
+      </div>
+      <span class="owner-badge">👤 mini-Olya + Sveta</span>
+      <span class="cat-prog" data-prog></span>
+      <span class="chev">▶</span>
+    </div>
+    <div class="cat-body">
+      <div class="ctx">
+        <b>LinkedIn:</b> пости Оля виставить <b>сама</b> — про відпустку <b>21.08.2026</b> і ще один (про відпустку або інсайти про роботу від місцевих грузинів) <b>28.08.2026</b>. Задача для <b>mini-Olya</b> — кілька разів зайти в LinkedIn Олі (логін і пароль у доступах, лінк нижче) і попросити свій Клод зібрати аналітику в контент-студію.
+      </div>
+      <div class="ctx">
+        <b>DOU відгуки:</b> Оля вже попросила <b>Єву Савченко (Промо)</b> залишити відгук — Єва в курсі, інструкцію отримала, опублікує <b>21–23 серпня</b>. Задача для <b>Sveta</b> — <b>24.08</b> зайти на DOU у розділ відгуків і перевірити, чи є відгук від Єви. Якщо немає — підійти до неї особисто й попінгувати, щоб залишила.
+      </div>
+
+      <div class="block-label">Лінки</div>
+      <div class="links">
+        <a class="link-btn" target="_blank" href="https://docs.superhuman.com/d/HR-MAIN_dCzDstvbjjc/ACCESS_sug8D7X0#ACCESS_tuITFj95/r13&columnId=c-brb4kaxGfq"><span class="ic">🔑</span><span class="t">Доступи (логін/пароль LinkedIn Олі)</span></a>
+        <a class="link-btn" target="_blank" href="https://jobs.dou.ua/companies/retrostyle-games/reviews/"><span class="ic">💬</span><span class="t">Відгуки RSG на DOU</span></a>
+      </div>
+
+      <div class="block-label">Задачі</div>
+      <div class="tasks">
+        <div class="task" data-id="ct-li-analytics"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Кілька разів зайти в LinkedIn Олі → Клод збирає аналітику в контент-студію</div><div class="task-sub">Пости Оля виставляє сама (21.08 і 28.08) — постити не треба</div></div><div class="task-controls"><select class="owner" data-default="mini-Olya"></select><input type="date" class="date"></div></div>
+        <div class="task flag" data-id="ct-dou-check"><input type="checkbox" class="chk"><div class="task-main"><div class="task-title">Перевірити відгук Єви Савченко на DOU; немає — попінгувати особисто</div><span class="deadline">⏰ 24.08</span></div><div class="task-controls"><select class="owner" data-default="Sveta"></select><input type="date" class="date"></div></div>
+      </div>
+
+      <div class="callout warn">🔒 <b>Пости самі не публікуємо.</b> LinkedIn-пости виставляє тільки Оля. Від команди — лише аналітика через контент-студію.</div>
+    </div>
+  </section>
+
+  <!-- ============ 7. PM ANALYTICS (LINK) ============ -->
+  <section class="cat" id="cat-pmanalytics" data-name="Аналітика по PM вакансії" data-ico="📊" data-owner="—" data-notask="1">
+    <div class="cat-head">
+      <span class="cat-ico">📊</span>
+      <div class="cat-titles">
+        <div class="cat-name">Аналітика по PM вакансії</div>
+        <div class="cat-sub">Це не задача — просто лінк, якщо спитає Паша</div>
+      </div>
+      <span class="owner-badge" style="background:rgba(255,255,255,.06);border-color:var(--border);color:var(--muted)">ℹ️ довідка</span>
+      <span class="chev">▶</span>
+    </div>
+    <div class="cat-body">
+      <div class="ctx">
+        Це <b>не задача</b>. Якщо <b>Паша спитає</b> аналітику по PM вакансії — давати ту саму посилання, що й раніше. Дані там Оля оновить <b>18.08.2026</b>, тож інфа буде більш-менш свіжа.
+      </div>
+      <div class="links">
+        <a class="link-btn" target="_blank" href="https://hrassist-cpu.github.io/hr-puls-pm/"><span class="ic">📊</span><span class="t">Дашборд аналітики PM</span></a>
+      </div>
+      <div class="callout info" style="margin-top:14px">🔑 Пароль: <span class="mono" id="pmpass">EaTZ-hDDn-hbK2</span> <button class="copy-inline" data-copy="EaTZ-hDDn-hbK2">Копіювати</button></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="big">Передача справ HR · <b style="color:var(--text)">Оля</b> · RetroStyle Games</div>
+    Відпустка <span class="tag">19.08 – 08.09.2026</span> · Хто підхоплює: <span class="tag">Nika</span> <span class="tag">Lesha</span> <span class="tag">Sveta</span> <span class="tag">Katya</span> <span class="tag">mini-Olya</span><br>
+    <span style="display:inline-block;margin-top:10px">💬 Щось незрозуміло або нестандартна ситуація — <b style="color:var(--text-2)">Оля на зв'язку в Telegram</b>, пишіть.</span>
+  </footer>
+
+</div>
+
+<script>
+/* ================= GATE (пароль на всю сторінку) ================= */
+var GATE_PASS = "RSG-olya-2026";   // <-- пароль доступу; можна змінити тут
+(function(){
+  function ssGet(k){ try{ return sessionStorage.getItem(k); }catch(e){ return null; } }
+  function ssSet(k,v){ try{ sessionStorage.setItem(k,v); }catch(e){} }
+  var unlocked = ssGet('olya-handoff-unlocked')==='1';
+  function open(){ document.getElementById('gate').style.display='none'; document.body.classList.remove('locked'); }
+  if(unlocked){ open(); return; }
+  function tryPass(){
+    var v=document.getElementById('gatePass').value.trim();
+    if(v===GATE_PASS){ ssSet('olya-handoff-unlocked','1'); open(); }
+    else { document.getElementById('gateErr').textContent='Невірний пароль'; }
+  }
+  document.getElementById('gateBtn').addEventListener('click',tryPass);
+  document.getElementById('gatePass').addEventListener('keydown',function(e){ if(e.key==='Enter') tryPass(); });
+})();
+
+/* ================= STORE (shared backend + local fallback) ================= */
+/* Після деплою Apps Script Web App — вставити сюди його URL: */
+var BACKEND_URL = "https://script.google.com/macros/s/AKfycbwrVFLKTmOnERS9XKLTrYExc_xZdJmjOpb4H8AJPy1BA1KTzZ5sO1XNv7lSnQToGZg/exec";
+var LS_KEY = "olya-handoff-v1";
+var state = {};                 // { "<field-id>": value }
+var dirty = {};                 // pending changes to push
+var syncMode = "local";
+
+function lsLoad(){ try{ return JSON.parse(localStorage.getItem(LS_KEY)||"{}"); }catch(e){ return {}; } }
+function lsSave(){ try{ localStorage.setItem(LS_KEY, JSON.stringify(state)); }catch(e){} }
+
+function setSync(mode,msg){
+  syncMode=mode;
+  var dot=document.getElementById('syncDot'), m=document.getElementById('syncMsg');
+  dot.className='sync-dot'+(mode==='ok'?' ok':mode==='local'?' local':'');
+  m.textContent=msg;
+}
+
+async function remoteLoad(){
+  if(!BACKEND_URL) return null;
+  try{
+    var r = await fetch(BACKEND_URL, {method:'GET'});
+    var j = await r.json();
+    return (j && j.state) ? j.state : {};
+  }catch(e){ return null; }
+}
+async function remotePush(patch){
+  if(!BACKEND_URL) return false;
+  try{
+    await fetch(BACKEND_URL, {method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'}, body:JSON.stringify({patch:patch})});
+    return true;
+  }catch(e){ return false; }
+}
+
+var pushTimer=null;
+function queuePush(id,val){
+  dirty[id]=val; state[id]=val; lsSave();
+  if(!BACKEND_URL) return;
+  clearTimeout(pushTimer);
+  pushTimer=setTimeout(async function(){
+    var patch=dirty; dirty={};
+    var ok=await remotePush(patch);
+    if(ok) setSync('ok','Синхронізовано для всіх · '+timeNow());
+    else { setSync('local','Не вдалось зберегти на сервер — збережено локально'); Object.assign(dirty,patch); }
+  }, 700);
+}
+function timeNow(){ var d=new Date(); return ('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2); }
+
+/* ================= BUILD / WIRE ================= */
+var OWNERS = ["—","Nika","Lesha","Nika+Lesha","Sveta","Katya","mini-Olya","ПМ / контроль"];
+
+function fillOwners(){
+  document.querySelectorAll('select.owner').forEach(function(sel){
+    var def = sel.getAttribute('data-default')||"—";
+    OWNERS.forEach(function(o){
+      var opt=document.createElement('option'); opt.value=o; opt.textContent=(o==="—"?"— хто взяв":o); sel.appendChild(opt);
+    });
+    sel.value = def;
+  });
+}
+
+function applyState(){
+  // tasks
+  document.querySelectorAll('.task').forEach(function(t){
+    var id=t.getAttribute('data-id');
+    var done=state['t.'+id+'.done'], date=state['t.'+id+'.date'], owner=state['t.'+id+'.owner'];
+    var chk=t.querySelector('.chk'), dt=t.querySelector('.date'), ow=t.querySelector('.owner');
+    if(done){ chk.checked=true; t.classList.add('done'); }
+    if(date && dt){ dt.value=date; }
+    if(owner && ow){ ow.value=owner; }
+  });
+  // drafts
+  document.querySelectorAll('.draft').forEach(function(d){
+    var id=d.getAttribute('data-id');
+    var v=state['d.'+id];
+    if(v!=null){ d.querySelector('.draft-text').value=v; }
+  });
+  // free fields (formula)
+  document.querySelectorAll('[data-editable-id]').forEach(function(f){
+    var id=f.getAttribute('data-editable-id'); var v=state['f.'+id];
+    if(v!=null && v!==""){ f.textContent=v; f.style.color='var(--text-2)'; }
+  });
+  updateProgress();
+}
+
+function wire(){
+  // checkboxes
+  document.querySelectorAll('.task').forEach(function(t){
+    var id=t.getAttribute('data-id');
+    var chk=t.querySelector('.chk'), dt=t.querySelector('.date'), ow=t.querySelector('.owner');
+    chk.addEventListener('change',function(){
+      t.classList.toggle('done',chk.checked);
+      queuePush('t.'+id+'.done', chk.checked);
+      if(chk.checked && dt && !dt.value){ var d=new Date(); dt.value=d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2); queuePush('t.'+id+'.date',dt.value); }
+      updateProgress();
+    });
+    if(dt) dt.addEventListener('change',function(){ queuePush('t.'+id+'.date', dt.value); });
+    if(ow) ow.addEventListener('change',function(){ queuePush('t.'+id+'.owner', ow.value); });
+  });
+  // drafts
+  document.querySelectorAll('.draft').forEach(function(d){
+    var id=d.getAttribute('data-id'); var ta=d.querySelector('.draft-text');
+    var t=null;
+    ta.addEventListener('input',function(){ clearTimeout(t); t=setTimeout(function(){ queuePush('d.'+id, ta.value); },500); });
+    d.querySelector('.copy-btn').addEventListener('click',function(){
+      var btn=this; navigator.clipboard.writeText(ta.value||"").then(function(){ btn.textContent='Скопійовано ✓'; btn.classList.add('copied'); setTimeout(function(){ btn.textContent='Копіювати'; btn.classList.remove('copied'); },1500); });
+    });
+  });
+  // inline copy (password etc.)
+  document.querySelectorAll('.copy-inline').forEach(function(b){
+    b.addEventListener('click',function(){ navigator.clipboard.writeText(b.getAttribute('data-copy')); var o=b.textContent; b.textContent='✓'; setTimeout(function(){ b.textContent=o; },1200); });
+  });
+  // editable formula field
+  document.querySelectorAll('[data-editable-id]').forEach(function(f){
+    f.addEventListener('click',function(){
+      if(f.getAttribute('contenteditable')==='true') return;
+      f.setAttribute('contenteditable','true'); f.style.color='var(--text-2)'; f.focus();
+      if(f.textContent.trim().startsWith('[')) f.textContent='';
+    });
+    f.addEventListener('blur',function(){ f.setAttribute('contenteditable','false'); queuePush('f.'+f.getAttribute('data-editable-id'), f.textContent.trim()); });
+  });
+  // accordion
+  document.querySelectorAll('.cat-head').forEach(function(h){
+    h.addEventListener('click',function(){ h.parentElement.classList.toggle('open'); });
+  });
+  // reset
+  document.getElementById('resetBtn').addEventListener('click',function(){
+    if(!confirm('Скинути ВСІ галочки, дати й імена для всіх? Драфти й формула залишаться.')) return;
+    Object.keys(state).forEach(function(k){ if(k.indexOf('t.')===0) delete state[k]; });
+    document.querySelectorAll('.task').forEach(function(t){ t.classList.remove('done'); t.querySelector('.chk').checked=false; var dt=t.querySelector('.date'); if(dt)dt.value=''; var ow=t.querySelector('.owner'); if(ow)ow.value=ow.getAttribute('data-default')||'—'; });
+    lsSave(); updateProgress();
+    if(BACKEND_URL) remotePush({__resetTasks:true});
+  });
+}
+
+function updateProgress(){
+  var all=document.querySelectorAll('.task'), done=0;
+  all.forEach(function(t){ if(t.querySelector('.chk').checked) done++; });
+  document.getElementById('pdone').textContent=done;
+  document.getElementById('ptotal').textContent=all.length;
+  document.getElementById('pfill').style.width=(all.length?(done/all.length*100):0)+'%';
+  // per-category
+  document.querySelectorAll('.cat').forEach(function(c){
+    var el=c.querySelector('[data-prog]'); if(!el) return;
+    var ts=c.querySelectorAll('.task'); if(!ts.length){ el.textContent=''; return; }
+    var d=0; ts.forEach(function(t){ if(t.querySelector('.chk').checked)d++; });
+    el.textContent=d+'/'+ts.length;
+  });
+  buildNav();
+}
+
+function buildNav(){
+  var nav=document.getElementById('catnav'); if(nav.dataset.built) { // just refresh counts
+    document.querySelectorAll('#catnav a').forEach(function(a){
+      var c=document.getElementById(a.getAttribute('href').slice(1)); if(!c)return;
+      var ts=c.querySelectorAll('.task'); var m=a.querySelector('.mini-done');
+      if(ts.length){ var d=0; ts.forEach(function(t){ if(t.querySelector('.chk').checked)d++; }); if(m)m.textContent=' '+d+'/'+ts.length; }
+    });
+    return;
+  }
+  document.querySelectorAll('.cat').forEach(function(c){
+    var a=document.createElement('a'); a.href='#'+c.id;
+    var ts=c.querySelectorAll('.task');
+    a.innerHTML=c.getAttribute('data-ico')+' '+c.getAttribute('data-name')+(ts.length?'<span class="mini-done"> 0/'+ts.length+'</span>':'');
+    a.addEventListener('click',function(e){ setTimeout(function(){ if(!c.classList.contains('open'))c.classList.add('open'); },10); });
+    nav.appendChild(a);
+  });
+  nav.dataset.built='1';
+}
+
+/* ================= INIT ================= */
+(async function init(){
+  fillOwners();
+  buildNav();
+  state = lsLoad();
+  applyState();
+  wire();
+  if(BACKEND_URL){
+    setSync('','Підключення до спільного сховища…');
+    var remote = await remoteLoad();
+    if(remote){ state=remote; lsSave(); applyState(); setSync('ok','Спільне сховище · синхронізовано'); }
+    else setSync('local','Сервер недоступний — працює локально');
+    // poll for others' changes
+    setInterval(async function(){ var r=await remoteLoad(); if(r){ state=r; applyState(); } }, 20000);
+  } else {
+    setSync('local','Локальний режим (спільне сховище ще не підключено)');
+  }
+})();
+</script>
+</body>
+</html>
