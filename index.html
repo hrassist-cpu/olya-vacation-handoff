@@ -193,7 +193,6 @@ body.locked{overflow:hidden}
       <div class="progress-num"><b id="pdone">0</b> / <span id="ptotal">0</span></div>
       <div class="progress-bar"><div class="progress-fill" id="pfill"></div></div>
       <div style="font-size:13px;color:var(--muted);font-weight:600">задач закрито</div>
-      <button class="btn-reset" id="resetBtn">Скинути все</button>
     </div>
     <div class="sync-note"><span class="sync-dot" id="syncDot"></span><span id="syncMsg">Підключення до спільного сховища…</span></div>
   </div>
@@ -655,14 +654,6 @@ function wire(){
   // accordion
   document.querySelectorAll('.cat-head').forEach(function(h){
     h.addEventListener('click',function(){ h.parentElement.classList.toggle('open'); });
-  });
-  // reset
-  document.getElementById('resetBtn').addEventListener('click',function(){
-    if(!confirm('Скинути ВСІ галочки, дати й імена для всіх? Драфти й формула залишаться.')) return;
-    Object.keys(state).forEach(function(k){ if(k.indexOf('t.')===0) delete state[k]; });
-    document.querySelectorAll('.task').forEach(function(t){ t.classList.remove('done'); t.querySelector('.chk').checked=false; var dt=t.querySelector('.date'); if(dt)dt.value=''; var ow=t.querySelector('.owner'); if(ow)ow.value=ow.getAttribute('data-default')||'—'; });
-    lsSave(); updateProgress();
-    if(BACKEND_URL) remotePush({__resetTasks:true});
   });
 }
 
